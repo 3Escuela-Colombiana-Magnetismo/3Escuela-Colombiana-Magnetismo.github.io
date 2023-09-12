@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación - Escuela de Magnetismo Manizales 2023</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">  <img src="3esclogo.png" width="400"></div>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Fechas.html">Fechas importantes</a></li>
+        <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="programacion.html" class="active">Programación</a></li>
+        <li><a href="conferencistas.html">Conferencistas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Programación</h2>
+    <p>Programa bajo construcción. Algunos de los temas a tratar incluyen los fundamentos del magnetismo; técnicas experimentales
+      y de producción, entre ellas la técnica de enfriamiento rápido, sintesís de materials, por métodos químicos, vibrating-sample magnetometer (VSM), 
+      resonancia paramagnética electrónica (EPR), efecto Kerr y efecto Hall; micromagnétismo, nanomagnétismo y sus aplicaciones; superconductividad y espintrónica; 
+      materiales magnéticos, nanohilos, microhilos, magnetocalóricos y aleaciones metálicas:  magnetismo en la industria y aplicaciones, sensores bio-magnéticos y paredes de dominio. 
+      Asimismo habrá una sesión de pósters (<a href="inscripcion.html">inscriba su trabajo aquí</a>). 
+    </p>
+        <div id="calendar"></div>
+      </section>      
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'timeGridWeek', // Cambiado a vista semanal
+        initialDate: '2023-11-13',    // Fecha inicial
+        slotMinTime: '08:00:00',      // Hora de inicio a las 8 AM
+        slotMaxTime: '18:00:00',      // Hora de finalización a las 6 PM
+        validRange: {
+          start: '2023-11-13',
+          end: '2023-11-18'
+      },
+      hiddenDays: [0, 6],
+      allDaySlot: false, 
+      events: [
+          // Eventos en el formato { title: 'Evento', start: '2023-11-13T10:00:00' }
+        ]
+      });
+      calendar.render();
+    });
+  </script>
+    <p>Apoyan:  </p>
+    <a href="https://unal.edu.co/">
+    <img src="unal.png" alt="Campus La Nubia" height="75">
+    </a>
+    <a href="https://uniandes.edu.co/">
+    <img src="logo-uniandes-1.png" alt="Campus La Nubia" height="75">
+    </a>
+    <a href="https://www.udea.edu.co/">
+    <img src="udea.png" alt="Campus La Nubia" height="75">
+    </a>
+    <a href="https://www.univalle.edu.co/">
+    <img src="logoUV_Oficial_Rojo.jpg" alt="Campus La Nubia" height="75">
+    </a>
+    <div class="logos-container">
+      <a href="https://web.icetex.gov.co/">
+      <img src="logotipo-ICETEX.svg" alt="Campus La Nubia" height="37.5">
+      </a>
+      <a href="https://pascualbravo.edu.co/">
+      <img src="pascualbravo.png" alt="Campus La Nubia" height="37.5">
+      </a>
+  </div>
+</body>
+</html>

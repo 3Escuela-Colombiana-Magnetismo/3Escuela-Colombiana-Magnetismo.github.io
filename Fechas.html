@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fechas importantes - Escuela de Magnetismo Manizales 2023</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    img{
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .imagen-contenedor {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo para la capa gris superpuesta */  
+        .imagen-contenedor::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(17, 14, 14, 0.63); /* Color gris semitransparente */
+        }
+
+        .texto-superpuesto {
+            position: absolute;
+            top: 50%; /* Alinea el texto verticalmente en el centro */
+            left: 50%; /* Alinea el texto horizontalmente en el centro */
+            transform: translate(-30%, -50%); /* Centra el texto completamente */
+            color: white; /* Color del texto */
+            font-size: 24px; /* Tamaño de fuente del texto */
+            font-weight: bold; /* Peso de fuente en negrita */
+            text-align: center; /* Alinea el texto al centro */
+            margin-left: -110px;
+        }
+
+        /* Estilo para la imagen */
+        .imagen-contenedor img {
+            display: block;
+            width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+            height: auto;
+        }
+        .botones {
+         text-align: center; /* Centra los botones horizontalmente */
+         margin-top: 20px; /* Espacio superior entre el texto de la imagen y los botones */
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004d99; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            margin: 5px; /* Espacio entre los botones */
+            border-radius: 5px; /* Borde redondeado del botón */
+        }
+
+        .boton:hover {
+            background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+        }
+
+        table th:nth-child(1) {
+         color: #0056b3; /* Cambia el color del texto del encabezado "Plazo" a rojo */
+         font-size: 200%;
+         background-color: #2c2f338f;
+        }
+
+        table th:nth-child(2) {
+         color: #0056b3; /* Cambia el color del texto del encabezado "Plazo" a rojo */
+         font-size: 200%;
+         background-color: #2c2f338f;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">  <img src="3esclogo.png" width="400"></div>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Fechas.html"  class="active">Fechas importantes</a></li>
+        <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="programacion.html" >Programación</a></li>
+        <li><a href="conferencistas.html">Conferencistas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Fechas importantes</h2>
+    <figure class="imagen-contenedor">
+        <img src="Edificio.jpg" alt="Edificio Química e Ingenieria Química - La Nubia" width="1000">
+        <figcaption class="texto-superpuesto">
+
+            <table>
+                <thead>
+                  <tr>
+                    <th>Plazo</th>
+                    <th>Actividad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22 de octubre</td>
+                    <td>Inscripción al evento.</td>
+                  </tr>
+                  <tr>
+                    <td>22 de octubre</td>
+                    <td>Envío de resumenes para pósters</td>
+                  </tr>
+                  <tr>
+                    <td>Por definir</td>
+                    <td>Respuesta aceptación póster.</td>
+                  </tr>
+                  <tr>
+                    <td>Por definir</td>
+                    <td>Envió de pago y su comprobante.</td>
+                  </tr>
+                  <tr>
+                    <td>13-17 Noviembre</td>
+                    <td>Realización del evento.</td>
+                  </tr>
+                </tbody>
+              </table>
+            <div class="botones">
+                <a href="inscripcion.html" class="boton">Inscribete!</a>
+                <a href="programacion.html" class="boton">Conoce la programación</a>
+              </div>
+        </figcaption>
+      </figure>
+
+  </section>
+  <p>Apoyan:  </p>
+  <a href="https://unal.edu.co/">
+  <img src="unal.png" alt="Campus La Nubia" height="75">
+  </a>
+  <a href="https://uniandes.edu.co/">
+  <img src="logo-uniandes-1.png" alt="Campus La Nubia" height="75">
+  </a>
+  <a href="https://www.udea.edu.co/">
+  <img src="udea.png" alt="Campus La Nubia" height="75">
+  </a>
+  <a href="https://www.univalle.edu.co/">
+  <img src="logoUV_Oficial_Rojo.jpg" alt="Campus La Nubia" height="75">
+  </a>
+  <div class="logos-container">
+    <a href="https://web.icetex.gov.co/">
+    <img src="logotipo-ICETEX.svg" alt="Campus La Nubia" height="37.5">
+    </a>
+    <a href="https://pascualbravo.edu.co/">
+    <img src="pascualbravo.png" alt="Campus La Nubia" height="37.5">
+    </a>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
