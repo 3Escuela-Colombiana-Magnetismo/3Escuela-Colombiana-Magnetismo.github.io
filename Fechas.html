@@ -78,7 +78,7 @@
         }
         @media(max-width: 767px){
           img{
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 0;
     }
     .imagen-contenedor {
@@ -102,7 +102,7 @@
             position: absolute;
             top: 50%; /* Alinea el texto verticalmente en el centro */
             left: 80%; /* Alinea el texto horizontalmente en el centro */
-            transform: translate(-30%, -50%); /* Centra el texto completamente */
+            transform: translate(-15%, -50%); /* Centra el texto completamente */
             color: white; /* Color del texto */
             font-size: 8px; /* Tamaño de fuente del texto */
             font-weight: bold; /* Peso de fuente en negrita */
@@ -118,7 +118,7 @@
         }
         .botones {
          text-align: center; /* Centra los botones horizontalmente */
-         margin-top: 20px; /* Espacio superior entre el texto de la imagen y los botones */
+         margin-top: -2px; /* Espacio superior entre el texto de la imagen y los botones */
         }
 
         .boton {
@@ -155,7 +155,12 @@
 <body>
   <header>
     <nav>
-        <div class="logo">  <img src="3esclogo.png" width="400"></div>
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>  
+        <div class="logo">  <img src="3esclogo.png" class="logo-image"></div>
       <ul class="menu">
         <li><a href="inicio.html">Inicio</a></li>
         <li><a href="Fechas.html"  class="active">Fechas importantes</a></li>
