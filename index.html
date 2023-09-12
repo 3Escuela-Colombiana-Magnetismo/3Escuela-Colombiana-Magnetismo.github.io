@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escuela de Magnetismo Manizales 2023</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icon-removebg-preview.png" type="image/x-icon">
   <style>
     p{
       text-align: left;}
@@ -18,6 +19,17 @@
     }
     li::first-letter {
       text-transform: uppercase; /* Convierte la primera letra en mayúscula */
+    }
+    .logo{
+        width: "950px";
+      }
+    @media(max-width:767px){
+      .logo{
+        width: 100%;
+      }
+      ul{
+        font-size: 10px;
+      }
     }
   </style>
 </head>
@@ -37,7 +49,7 @@
   </header>
 
   <section class="section">
-    <img src="3esclogo.png" width="950">
+    <img src="3esclogo.png" class="logo">
       <ul>
         <li>FUNDAMENTOS DEL MAGNETISMO</li>
         <li>TECNICAS EXPERIMENTALES DE CARACTERIZACIÓN Y FABRICACION</li>

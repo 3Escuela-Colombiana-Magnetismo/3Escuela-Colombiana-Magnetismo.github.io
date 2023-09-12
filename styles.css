@@ -101,17 +101,73 @@ h2, h3{
   width: 25px;
   height: 3px;
   background-color: #333;
-  margin: 6px 0;
+  margin: 4px 0;
 }
 /* Mostrar el icono de menú hamburguesa en dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .menu-icon {
     display: block;
+    cursor:pointer;
   }
 }
 /* Ocultar la lista de navegación en dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .menu {
     display: none;
   }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin-left: 50px; /* Margen izquierdo para el cuerpo */
+    margin-right: 50px; /* Margen derecho para el cuerpo */
+  }
+  
+  header {
+    background-color: #ffffff; 
+    color: #004D99;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: -50px; /* Margen izquierdo para el cuerpo */
+    margin-right: -50px; /* Margen derecho para el cuerpo */
+    border-bottom: 2px solid #004d99;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+      margin-top: 10px;
+  }
+
+  .image {
+      margin: 0 auto;
+  }
+
+  /* Estilo para el menú desplegable en la versión móvil */
+.menu.show {
+  display: block; /* Muestra el menú cuando se hace clic en el botón */
+  background-color: #ddd; /* Fondo gris */
+  position: absolute; /* Posición absoluta para superponer el contenido */
+  top: 60px; /* Ajusta la posición vertical según la barra de navegación */
+  left: 0;
+  width: 100%; /* Ancho completo */
+  z-index: 1; /* Asegura que el menú esté por encima del contenido */
+}
+
+.menu.show li {
+  padding: 10px 20px; /* Añade espaciado alrededor de los elementos de la lista */
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos de la lista */
+}
+
+.menu.show li {
+  padding: 10px 20px; /* Añade espaciado alrededor de los elementos de la lista */
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos de la lista */
+}
 }

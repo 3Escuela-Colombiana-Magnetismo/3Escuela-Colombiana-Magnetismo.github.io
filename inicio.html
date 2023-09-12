@@ -69,10 +69,76 @@
         .boton:hover {
             background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
         }
+
+        @media(max-width: 767px){
+          img{
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .imagen-contenedor {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo para la capa gris superpuesta */  
+        .imagen-contenedor::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(17, 14, 14, 0.63); /* Color gris semitransparente */
+        }
+
+        .texto-superpuesto {
+            position: absolute;
+            top: 50%; /* Alinea el texto verticalmente en el centro */
+            left: 80%; /* Alinea el texto horizontalmente en el centro */
+            transform: translate(-30%, -50%); /* Centra el texto completamente */
+            color: white; /* Color del texto */
+            font-size: 8px; /* Tamaño de fuente del texto */
+            font-weight: bold; /* Peso de fuente en negrita */
+            text-align: center; /* Alinea el texto al centro */
+            margin-left: -110px;
+        }
+
+        /* Estilo para la imagen */
+        .imagen-contenedor img {
+            display: block;
+            width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+            height: auto;
+        }
+        .botones {
+         text-align: center; /* Centra los botones horizontalmente */
+         margin-top: 20px; /* Espacio superior entre el texto de la imagen y los botones */
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #004d99; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            margin: 5px; /* Espacio entre los botones */
+            border-radius: 5px; /* Borde redondeado del botón */
+        }
+
+        .boton:hover {
+            background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+        }
+
+        }
   </style>
 <header>
     <nav>
       <div class="logo">  <img src="3esclogo.png" width="400"></div>
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>  
       <ul class="menu">
         <li><a href="inicio.html" class="active">Inicio</a></li>
         <li><a href="Fechas.html">Fechas importantes</a></li>
@@ -81,12 +147,7 @@
         <li><a href="conferencistas.html">Conferencistas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </nav>
-    <div class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>      
+    </nav>    
 </header>
 <body>
 
