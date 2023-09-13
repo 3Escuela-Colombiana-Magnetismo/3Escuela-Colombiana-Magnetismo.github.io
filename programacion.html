@@ -9,6 +9,12 @@
   <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.js"></script>
   <link rel="icon" href="icon-removebg-preview.png" type="image/x-icon">
+  <style>
+    .fc-event {
+  line-height: 1; /* Ajusta el valor según el tamaño deseado, por ejemplo, 2 para duplicar la altura */
+}
+
+  </style>
 </head>
 <body>
   <header>
@@ -23,6 +29,7 @@
         <li><a href="inicio.html">Inicio</a></li>
         <li><a href="Fechas.html">Fechas importantes</a></li>
         <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="Resumenes.html">Resúmenes</a></li>
         <li><a href="programacion.html" class="active">Programación</a></li>
         <li><a href="conferencistas.html">Conferencistas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -32,11 +39,11 @@
 
   <section class="section">
     <h2>Programación</h2>
-    <p>Programa bajo construcción. Algunos de los temas a tratar incluyen los fundamentos del magnetismo; técnicas experimentales
-      y de producción, entre ellas la técnica de enfriamiento rápido, sintesís de materials, por métodos químicos, vibrating-sample magnetometer (VSM), 
-      resonancia paramagnética electrónica (EPR), efecto Kerr y efecto Hall; micromagnétismo, nanomagnétismo y sus aplicaciones; superconductividad y espintrónica; 
-      materiales magnéticos, nanohilos, microhilos, magnetocalóricos y aleaciones metálicas:  magnetismo en la industria y aplicaciones, sensores bio-magnéticos y paredes de dominio. 
-      Asimismo habrá una sesión de pósters (<a href="inscripcion.html">inscriba su trabajo aquí</a>). 
+    <p>La escuela está organizada en 4 cursillos que permitirán a los asistentes hacen un recorrido desde el origen del magnetismo, y su fundamentación teórica y experimental, 
+      hasta tópicos de gran actualidad. Adicionalmente habrá sesiones de conferencistas nacionales que darán a conocer, en sesiones de 20 minutos,
+       los resultados de sus investigaciones más recientes en esta área. Finalmente, y la razón de ser de esta escuela, además de impulsar en los jóvenes
+        investigadores su interés por esta área y ofrecerles herramientas de actualidad por parte de investigadores de gran trayectoria en este campo, es generar espacios de discusión 
+        y presentación de sus trabajos en la sesión de posters. A continuación, se presenta la programación general del evento, la cuál será detallada más adelante.  
     </p>
         <div id="calendar"></div>
       </section>      
@@ -49,16 +56,236 @@
         initialView: 'timeGridWeek', // Cambiado a vista semanal
         initialDate: '2023-11-13',    // Fecha inicial
         slotMinTime: '08:00:00',      // Hora de inicio a las 8 AM
-        slotMaxTime: '18:00:00',      // Hora de finalización a las 6 PM
+        slotMaxTime: '19:00:00',      // Hora de finalización a las 6 PM
         validRange: {
           start: '2023-11-13',
           end: '2023-11-18'
       },
       hiddenDays: [0, 6],
       allDaySlot: false, 
+      slotDuration: '00:20:00', // Ajusta este valor para cambiar el espacio entre las horas
       events: [
           // Eventos en el formato { title: 'Evento', start: '2023-11-13T10:00:00' }
-        ]
+          //Lunes
+          {
+        title: 'Registro',            // Título del evento
+        start: '2023-11-13T09:00:00', // Hora de inicio del evento
+        end: '2023-11-13T16:00:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Evento cultural y canelazo',            // Título del evento
+        start: '2023-11-13T17:00:00', // Hora de inicio del evento
+        end: '2023-11-13T19:00:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      //Martes
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesion A - Origen y conceptos teóricos)',            // Título del evento
+        start: '2023-11-14T08:00:00', // Hora de inicio del evento
+        end: '2023-11-14T09:00:00',   // Hora de finalización del evento
+        backgroundColor: 'blue'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesion B - Origen y conceptos teóricos)',            // Título del evento
+        start: '2023-11-14T09:00:00', // Hora de inicio del evento
+        end: '2023-11-14T010:00:00',
+        backgroundColor: 'blue'   // Hora de finalización del evento
+      },
+      {
+        title: 'Coffee break',            // Título del evento
+        start: '2023-11-14T10:00:00', // Hora de inicio del evento
+        end: '2023-11-14T10:30:00',
+        backgroundColor: 'gray'   // Hora de finalización del evento
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesion C - Origen y conceptos teóricos)',            // Título del evento
+        start: '2023-11-14T10:30:00', // Hora de inicio del evento
+        end: '2023-11-14T011:30:00',   // Hora de finalización del evento
+        backgroundColor: 'blue'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesion D - Origen y conceptos teóricos)',            // Título del evento
+        start: '2023-11-14T11:30:00', // Hora de inicio del evento
+        end: '2023-11-14T012:30:00',   // Hora de finalización del evento
+        backgroundColor: 'blue'
+      },
+      {
+        title: 'Libre',            // Título del evento
+        start: '2023-11-14T12:30:00', // Hora de inicio del evento
+        end: '2023-11-14T14:00:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesión E - Técnicas experimentales)',            // Título del evento
+        start: '2023-11-14T14:00:00', // Hora de inicio del evento
+        end: '2023-11-14T015:00:00',   // Hora de finalización del evento
+        backgroundColor: 'purple'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesión F - Técnicas experimentales)',            // Título del evento
+        start: '2023-11-14T15:00:00', // Hora de inicio del evento
+        end: '2023-11-14T016:00:00',   // Hora de finalización del evento
+        backgroundColor: 'purple'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesión G - Técnicas experimentales)',            // Título del evento
+        start: '2023-11-14T16:00:00', // Hora de inicio del evento
+        end: '2023-11-14T017:00:00',   // Hora de finalización del evento
+        backgroundColor: 'purple'
+      },
+      {
+        title: 'Cursillo I - Fundamentos del magnetismo (sesión H - Técnicas experimentales)',            // Título del evento
+        start: '2023-11-14T17:00:00', // Hora de inicio del evento
+        end: '2023-11-14T018:00:00',   // Hora de finalización del evento
+        backgroundColor: 'purple'
+      },
+      //Miércoles
+      {
+        title: 'Cursillo II - Superconductividad y magnetismo (sesión A)',            // Título del evento
+        start: '2023-11-15T08:00:00', // Hora de inicio del evento
+        end: '2023-11-15T009:00:00',  // Hora de finalización del evento
+        backgroundColor: 'green'
+      },
+      {
+        title: 'Cursillo II - Superconductividad y magnetismo (sesión B)',            // Título del evento
+        start: '2023-11-15T09:00:00', // Hora de inicio del evento
+        end: '2023-11-15T10:00:00',   // Hora de finalización del evento
+        backgroundColor: 'green'
+      },
+      {
+        title: 'Coffee break',            // Título del evento
+        start: '2023-11-15T10:00:00', // Hora de inicio del evento
+        end: '2023-11-15T10:30:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Cursillo II - Superconductividad y magnetismo (sesión C)',            // Título del evento
+        start: '2023-11-15T10:30:00', // Hora de inicio del evento
+        end: '2023-11-15T11:30:00',   // Hora de finalización del evento
+        backgroundColor: 'green'
+      },
+      {
+        title: 'Conferencias - Materiales Magnéticos y fenómenos asociados (sesion A)',            // Título del evento
+        start: '2023-11-15T11:30:00', // Hora de inicio del evento
+        end: '2023-11-15T12:30:00',   // Hora de finalización del evento
+        backgroundColor: 'red'
+      },
+      {
+        title: 'Libre',            // Título del evento
+        start: '2023-11-15T12:30:00', // Hora de inicio del evento
+        end: '2023-11-15T14:00:00',
+        backgroundColor: 'gray'   // Hora de finalización del evento
+      },
+      {
+        title: 'Conferencias - Materiales Magnéticos y fenómenos asociados (sesion B)',            // Título del evento
+        start: '2023-11-15T14:00:00', // Hora de inicio del evento
+        end: '2023-11-15T15:00:00',   // Hora de finalización del evento
+        backgroundColor: 'red'
+      },
+      {
+        title: 'Conferencias - Materiales Magnéticos y fenómenos asociados (sesion C)',            // Título del evento
+        start: '2023-11-15T15:00:00', // Hora de inicio del evento
+        end: '2023-11-15T16:00:00',   // Hora de finalización del evento
+        backgroundColor: 'red'
+      },
+      {
+        title: 'PRESENTACION DE POSTERS - SESION A',            // Título del evento
+        start: '2023-11-15T16:00:00', // Hora de inicio del evento
+        end: '2023-11-15T19:00:00'   // Hora de finalización del evento
+      },
+      //Jueves
+      {
+        title: 'Cursillo III - Sistemas magnéticos e interacciones competitivas (Sesión A)',            // Título del evento
+        start: '2023-11-16T08:00:00', // Hora de inicio del evento
+        end: '2023-11-16T09:00:00',   // Hora de finalización del evento
+        backgroundColor: 'brown'
+      },
+      {
+        title: 'Cursillo III - Sistemas magnéticos e interacciones competitivas (Sesión B)',            // Título del evento
+        start: '2023-11-16T09:00:00', // Hora de inicio del evento
+        end: '2023-11-16T10:00:00',   // Hora de finalización del evento
+        backgroundColor: 'brown'
+      },
+      {
+        title: 'Coffee break',            // Título del evento
+        start: '2023-11-16T10:00:00', // Hora de inicio del evento
+        end: '2023-11-16T10:30:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Conferencias - Materiales Magnéticos y fenómenos asociados (sesion D)',            // Título del evento
+        start: '2023-11-16T10:30:00', // Hora de inicio del evento
+        end: '2023-11-16T11:30:00',   // Hora de finalización del evento
+        backgroundColor: 'red'
+      },
+      {
+        title: 'Conferencias - Materiales Magnéticos y fenómenos asociados (sesion E)',            // Título del evento
+        start: '2023-11-16T11:30:00', // Hora de inicio del evento
+        end: '2023-11-16T12:30:00',   // Hora de finalización del evento
+        backgroundColor: 'red'
+      },
+      {
+        title: 'Libre',            // Título del evento
+        start: '2023-11-16T12:30:00', // Hora de inicio del evento
+        end: '2023-11-16T14:00:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Cursillo IV - Micro y nanomagnetismo (sesión A)',            // Título del evento
+        start: '2023-11-16T14:00:00', // Hora de inicio del evento
+        end: '2023-11-16T015:00:00',   // Hora de finalización del evento
+        backgroundColor: 'orange'
+      },
+      {
+        title: 'Cursillo IV - Micro y nanomagnetismo (sesión B)',            // Título del evento
+        start: '2023-11-16T15:00:00', // Hora de inicio del evento
+        end: '2023-11-16T016:00:00',   // Hora de finalización del evento
+        backgroundColor: 'orange'
+      },   
+      {
+        title: 'PRESENTACION DE POSTERS - SESION B',            // Título del evento
+        start: '2023-11-16T16:00:00', // Hora de inicio del evento
+        end: '2023-11-16T19:00:00'   // Hora de finalización del evento
+      },
+      //Viernes
+
+      {
+        title: 'Cursillo III - Sistemas magnéticos e interacciones competitivas (Sesión C)',            // Título del evento
+        start: '2023-11-17T08:00:00', // Hora de inicio del evento
+        end: '2023-11-17T09:00:00',   // Hora de finalización del evento
+        backgroundColor: 'brown'
+      },
+      {
+        title: 'Cursillo III - Sistemas magnéticos e interacciones competitivas (Sesión D)',            // Título del evento
+        start: '2023-11-17T09:00:00', // Hora de inicio del evento
+        end: '2023-11-17T10:00:00',   // Hora de finalización del evento
+        backgroundColor: 'brown'
+      },
+      {
+        title: 'Coffee break',            // Título del evento
+        start: '2023-11-17T10:00:00', // Hora de inicio del evento
+        end: '2023-11-17T10:30:00' ,  // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+      {
+        title: 'Cursillo IV - Micro y nanomagnetismo (sesión C)',            // Título del evento
+        start: '2023-11-17T10:30:00', // Hora de inicio del evento
+        end: '2023-11-17T11:30:00',   // Hora de finalización del evento
+        backgroundColor: 'orange'
+      },
+      {
+        title: 'Mesa redonda - Perspectivas en investigacion y desarrollo tecnológico basado en magnetismo en Colombia',            // Título del evento
+        start: '2023-11-17T11:30:00', // Hora de inicio del evento
+        end: '2023-11-17T12:30:00'   // Hora de finalización del evento
+      },
+      {
+        title: 'Almuerzo de clausura',            // Título del evento
+        start: '2023-11-17T12:30:00', // Hora de inicio del evento
+        end: '2023-11-17T14:00:00',   // Hora de finalización del evento
+        backgroundColor: 'gray'
+      },
+    ]
       });
       calendar.render();
     });
@@ -78,10 +305,10 @@
     </a>
     <div class="logos-container">
       <a href="https://web.icetex.gov.co/">
-      <img src="logotipo-ICETEX.svg" alt="Campus La Nubia" height="37.5">
+      <img src="logotipo-ICETEX.svg" alt="Campus La Nubia" width="145">
       </a>
       <a href="https://pascualbravo.edu.co/">
-      <img src="pascualbravo.png" alt="Campus La Nubia" height="37.5">
+      <img src="pascualbravo.png" alt="Campus La Nubia" width="145">
       </a>
   </div>
   <script src="script.js"></script>
