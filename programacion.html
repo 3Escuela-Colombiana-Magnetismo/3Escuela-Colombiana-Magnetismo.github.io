@@ -13,7 +13,6 @@
     .fc-event {
   line-height: 1; /* Ajusta el valor según el tamaño deseado, por ejemplo, 2 para duplicar la altura */
 }
-
   </style>
 </head>
 <body>
@@ -46,7 +45,37 @@
         y presentación de sus trabajos en la sesión de posters. A continuación, se presenta la programación general del evento, la cuál será detallada más adelante.  
     </p>
         <div id="calendar"></div>
-      </section>      
+      
+        <table>
+          <tr>
+              <td style="background-color: #004D99;">MINICURSO 1: Fundamentos del Magnetismo: orden y conceptos teóricos
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #990F7B;">MINICURSO 1: Fundamentos del Magnetismo: técnicas experimentales
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #99180F;">MINICURSO 2: Superconductividad y Magnetismo
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #6A66FF;">MINICURSO 3: Sistemas magnéticos con interacciones competitivas
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #454D04;">MINICURSO 4: Micro y Nanomagnetismo
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #FF8880;">TOPICO 1:  Conferencias: Materiales magnéticos de interés científico - Fenómenos asociados
+              </td>
+          </tr>
+          <tr>
+              <td style="background-color: #8B990F;">TOPICO 2: Conferencias: Materiales magnéticos de interés tecnológico - Aplicaciones y nuevas tecnologías 
+              </td>
+          </tr>
+      </table>
   </section>
 
   <script>
@@ -63,14 +92,14 @@
       },
       hiddenDays: [0, 6],
       allDaySlot: false, 
-      slotDuration: '00:20:00', // Ajusta este valor para cambiar el espacio entre las horas
+      slotDuration: '00:20:00', // Ajusta este valor para cambiar el espacio entre las horas  
       events: [
           // Eventos en el formato { title: 'Evento', start: '2023-11-13T10:00:00' }
           //Lunes
           {
         title: 'Registro',            // Título del evento
-        start: '2023-11-13T09:00:00', // Hora de inicio del evento
-        end: '2023-11-13T16:00:00',   // Hora de finalización del evento
+        start: '2023-11-13T14:20:00', // Hora de inicio del evento
+        end: '2023-11-13T17:00:00',   // Hora de finalización del evento
         backgroundColor: '#089995'
       },
       {
@@ -81,158 +110,290 @@
       },
       //Martes
       {
-        title: 'Mini-curso I - Fundamentos del magnetismo (sesion A - Origen y conceptos teóricos)',            // Título del evento
+        title: 'Apertura',            // Título del evento
         start: '2023-11-14T08:00:00', // Hora de inicio del evento
-        end: '2023-11-14T10:00:00',   // Hora de finalización del evento
+        end: '2023-11-14T08:30:00',   // Hora de finalización del evento
+        backgroundColor: '#082A4D'
+      },
+      {
+        title: 'Germán Perez',            // Título del evento
+        start: '2023-11-14T08:30:00', // Hora de inicio del evento
+        end: '2023-11-14T10:30:00',   // Hora de finalización del evento
         backgroundColor: '#004D99'
       },
       {
         title: 'Coffee break',            // Título del evento
-        start: '2023-11-14T10:00:00', // Hora de inicio del evento
-        end: '2023-11-14T10:30:00',
-        backgroundColor: '#089995'   // Hora de finalización del evento
+        start: '2023-11-14T10:30:00', // Hora de inicio del evento
+        end: '2023-11-14T10:50:00',
+        backgroundColor: '#acacac'   // Hora de finalización del evento
       },
       {
-        title: 'Mini-curso I - Fundamentos del magnetismo (sesion B - Origen y conceptos teóricos)',            // Título del evento
-        start: '2023-11-14T10:30:00', // Hora de inicio del evento
+        title: 'Jesús Tabares',            // Título del evento
+        start: '2023-11-14T10:50:00', // Hora de inicio del evento
         end: '2023-11-14T12:30:00',   // Hora de finalización del evento
         backgroundColor: '#004D99'
       },
       {
         title: 'Libre',            // Título del evento
         start: '2023-11-14T12:30:00', // Hora de inicio del evento
-        end: '2023-11-14T14:00:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
+        end: '2023-11-14T14:20:00',   // Hora de finalización del evento
+        backgroundColor: '#000000'
       },
       {
-        title: 'Mini-curso I - Fundamentos del magnetismo (sesión C - Técnicas experimentales)',            // Título del evento
-        start: '2023-11-14T14:00:00', // Hora de inicio del evento
-        end: '2023-11-14T16:00:00',   // Hora de finalización del evento
+        title: 'Ingrid Milena Saavedra',            // Título del evento
+        start: '2023-11-14T14:20:00', // Hora de inicio del evento
+        end: '2023-11-14T14:50:00',   // Hora de finalización del evento
+        backgroundColor: '#004D99'
+      },
+      {
+        title: 'Oscar Giraldo',            // Título del evento
+        start: '2023-11-14T14:50:00', // Hora de inicio del evento
+        end: '2023-11-14T15:50:00',   // Hora de finalización del evento
         backgroundColor: '#990F7B'
       },
       {
-        title: 'Break',            // Título del evento
-        start: '2023-11-14T16:00:00', // Hora de inicio del evento
-        end: '2023-11-14T16:30:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
+        title: 'Coffe Break',            // Título del evento
+        start: '2023-11-14T15:50:00', // Hora de inicio del evento
+        end: '2023-11-14T16:20:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
       },
       {
-        title: 'Mini-curso I - Fundamentos del magnetismo (sesión D - Técnicas experimentales)',            // Título del evento
-        start: '2023-11-14T16:30:00', // Hora de inicio del evento
-        end: '2023-11-14T18:30:00',   // Hora de finalización del evento
+        title: 'Ovidio Almanza',            // Título del evento
+        start: '2023-11-14T16:20:00', // Hora de inicio del evento
+        end: '2023-11-14T17:10:00',   // Hora de finalización del evento
+        backgroundColor: '#990F7B'
+      },
+      {
+        title: 'Juan G. Ramirez',            // Título del evento
+        start: '2023-11-14T17:10:00', // Hora de inicio del evento
+        end: '2023-11-14T18:00:00',   // Hora de finalización del evento
+        backgroundColor: '#990F7B'
+      },
+      {
+        title: 'Oscar Arnache',            // Título del evento
+        start: '2023-11-14T18:00:00', // Hora de inicio del evento
+        end: '2023-11-14T18:50:00',   // Hora de finalización del evento
         backgroundColor: '#990F7B'
       },
       //Miércoles
       {
-        title: 'Mini-curso II - Superconductividad y magnetismo (sesión A)',            // Título del evento
+        title: 'Manuel Vásquez',            // Título del evento
         start: '2023-11-15T08:00:00', // Hora de inicio del evento
-        end: '2023-11-15T10:00:00',  // Hora de finalización del evento
+        end: '2023-11-15T09:00:00',  // Hora de finalización del evento
         backgroundColor: '#8B990F'
+      },
+      {
+        title: 'Julián Moreno',            // Título del evento
+        start: '2023-11-15T09:00:00', // Hora de inicio del evento
+        end: '2023-11-15T09:30:00',  // Hora de finalización del evento
+        backgroundColor: '#8B990F'
+      },
+      {
+        title: 'Edgar Patiño',            // Título del evento
+        start: '2023-11-15T09:30:00', // Hora de inicio del evento
+        end: '2023-11-15T10:30:00',  // Hora de finalización del evento
+        backgroundColor: '#990F7B'
       },
       {
         title: 'Coffee break',            // Título del evento
-        start: '2023-11-15T10:00:00', // Hora de inicio del evento
-        end: '2023-11-15T10:30:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
-      },
-      {
-        title: 'Mini-curso II - Superconductividad y magnetismo (sesión B)',            // Título del evento
         start: '2023-11-15T10:30:00', // Hora de inicio del evento
-        end: '2023-11-15T11:30:00',   // Hora de finalización del evento
-        backgroundColor: '#8B990F'
+        end: '2023-11-15T10:50:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
       },
       {
-        title: 'Tópico I - conferencias: Materiales magnéticos de interés científico - fenómenos asociados',            // Título del evento
-        start: '2023-11-15T11:30:00', // Hora de inicio del evento
+        title: 'Diego Muraca',            // Título del evento
+        start: '2023-11-15T10:50:00', // Hora de inicio del evento
         end: '2023-11-15T12:30:00',   // Hora de finalización del evento
-        backgroundColor: '#99180F'
+        backgroundColor: '#454D04'
       },
       {
         title: 'Libre',            // Título del evento
         start: '2023-11-15T12:30:00', // Hora de inicio del evento
-        end: '2023-11-15T14:00:00',
-        backgroundColor: '#089995'   // Hora de finalización del evento
+        end: '2023-11-15T14:20:00',
+        backgroundColor: '#000000'   // Hora de finalización del evento
       },
       {
-        title: 'Tópico I - conferencias: Materiales magnéticos de interés científico - fenómenos asociados',            // Título del evento
-        start: '2023-11-15T14:00:00', // Hora de inicio del evento
-        end: '2023-11-15T17:00:00',   // Hora de finalización del evento
+        title: 'Jairo Roa',            // Título del evento
+        start: '2023-11-15T14:20:00', // Hora de inicio del evento
+        end: '2023-11-15T14:50:00',   // Hora de finalización del evento
+        backgroundColor: '#99180F'
+      },
+      {
+        title: 'Jesús Tabares',            // Título del evento
+        start: '2023-11-15T14:50:00', // Hora de inicio del evento
+        end: '2023-11-15T15:50:00',   // Hora de finalización del evento
+        backgroundColor: '#990F7B'
+      },
+      {
+        title: 'Coffe break',            // Título del evento
+        start: '2023-11-15T15:50:00', // Hora de inicio del evento
+        end: '2023-11-15T16:20:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
+      },
+      {
+        title: 'Alvaro Mariño',            // Título del evento
+        start: '2023-11-15T16:20:00', // Hora de inicio del evento
+        end: '2023-11-15T17:10:00',   // Hora de finalización del evento
+        backgroundColor: '#99180F'
+      },
+      {
+        title: 'Carlos Parra',            // Título del evento
+        start: '2023-11-15T17:10:00', // Hora de inicio del evento
+        end: '2023-11-15T18:00:00',   // Hora de finalización del evento
         backgroundColor: '#99180F'
       },
       {
         title: 'PRESENTACION DE POSTERS - SESION A',            // Título del evento
-        start: '2023-11-15T17:00:00', // Hora de inicio del evento
-        end: '2023-11-15T18:30:00',   // Hora de finalización del evento
+        start: '2023-11-15T18:00:00', // Hora de inicio del evento
+        end: '2023-11-15T19:00:00',   // Hora de finalización del evento
         backgroundColor: '#082A4D'
       },
       //Jueves
       {
-        title: 'Mini-curso III - Sistemas magnéticos con interacciones competitivas (Sesión A)',            // Título del evento
+        title: 'Diana Quintero',            // Título del evento
         start: '2023-11-16T08:00:00', // Hora de inicio del evento
-        end: '2023-11-16T10:00:00',   // Hora de finalización del evento
+        end: '2023-11-16T08:30:00',   // Hora de finalización del evento
+        backgroundColor: '#6A66FF'
+      },
+      {
+        title: 'Sergio Coutinho',            // Título del evento
+        start: '2023-11-16T08:30:00', // Hora de inicio del evento
+        end: '2023-11-16T10:30:00',   // Hora de finalización del evento
         backgroundColor: '#6A66FF'
       },
       {
         title: 'Coffee break',            // Título del evento
-        start: '2023-11-16T10:00:00', // Hora de inicio del evento
-        end: '2023-11-16T10:30:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
+        start: '2023-11-16T10:30:00', // Hora de inicio del evento
+        end: '2023-11-16T10:50:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
       },
       {
-        title: 'Tópico II - conferencias: Materiales magnéticos de interés tecnológico - aplicaciones y nuevas tecnologías',            // Título del evento
-        start: '2023-11-16T10:30:00', // Hora de inicio del evento
+        title: 'Diego Muraca',            // Título del evento
+        start: '2023-11-16T10:50:00', // Hora de inicio del evento
         end: '2023-11-16T12:30:00',   // Hora de finalización del evento
-        backgroundColor: '#99180F'
+        backgroundColor: '#454D04'
       },
       {
         title: 'Libre',            // Título del evento
         start: '2023-11-16T12:30:00', // Hora de inicio del evento
-        end: '2023-11-16T14:00:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
+        end: '2023-11-16T14:20:00',   // Hora de finalización del evento
+        backgroundColor: '#000000'
       },
       {
-        title: 'Mini-curso IV - Micro y nanomagnetismo (sesión A)',            // Título del evento
-        start: '2023-11-16T14:00:00', // Hora de inicio del evento
-        end: '2023-11-16T17:00:00',   // Hora de finalización del evento
+        title: 'Aminta Mendoza',            // Título del evento
+        start: '2023-11-16T14:20:00', // Hora de inicio del evento
+        end: '2023-11-16T14:50:00',   // Hora de finalización del evento
+        backgroundColor: '#6A66FF'
+      },
+      {
+        title: 'Daniel Salazar',            // Título del evento
+        start: '2023-11-16T14:50:00', // Hora de inicio del evento
+        end: '2023-11-16T15:50:00',   // Hora de finalización del evento
+        backgroundColor: '#FF8880'
+      },
+      {
+        title: 'Coffe break',            // Título del evento
+        start: '2023-11-16T15:50:00', // Hora de inicio del evento
+        end: '2023-11-16T16:20:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
+      },
+      {
+        title: 'Roberto Zysler',            // Título del evento
+        start: '2023-11-16T16:20:00', // Hora de inicio del evento
+        end: '2023-11-16T17:20:00',   // Hora de finalización del evento
         backgroundColor: '#454D04'
       },
       {
-        title: 'PRESENTACION DE POSTERS - SESION B',            // Título del evento
-        start: '2023-11-16T17:00:00', // Hora de inicio del evento
-        end: '2023-11-16T18:30:00',   // Hora de finalización del evento
-        backgroundColor: '#082A4D'
+        title: 'Fabio Saccone',            // Título del evento
+        start: '2023-11-16T17:20:00', // Hora de inicio del evento
+        end: '2023-11-16T18:20:00',   // Hora de finalización del evento
+        backgroundColor: '#8B990F'
       },
       //Viernes
 
       {
-        title: 'Mini-curso III - Sistemas magnéticos e interacciones competitivas (Sesión B)',            // Título del evento
+        title: 'Catalina Salazar',            // Título del evento
         start: '2023-11-17T08:00:00', // Hora de inicio del evento
+        end: '2023-11-17T08:30:00',   // Hora de finalización del evento
+        backgroundColor: '#FF8880'
+      },
+      {
+        title: 'Jairo Sinova',            // Título del evento
+        start: '2023-11-17T08:30:00', // Hora de inicio del evento
+        end: '2023-11-17T09:10:00',   // Hora de finalización del evento
+        backgroundColor: '#FF8880'
+      },
+      {
+        title: 'Sergio Coutinho',            // Título del evento
+        start: '2023-11-17T09:10:00', // Hora de inicio del evento
         end: '2023-11-17T10:00:00',   // Hora de finalización del evento
         backgroundColor: '#6A66FF'
       },
       {
-        title: 'Coffee break',            // Título del evento
+        title: 'Andrés Rosales',            // Título del evento
         start: '2023-11-17T10:00:00', // Hora de inicio del evento
-        end: '2023-11-17T10:30:00' ,  // Hora de finalización del evento
-        backgroundColor: '#089995'
+        end: '2023-11-17T10:30:00',   // Hora de finalización del evento
+        backgroundColor: '#6A66FF'
       },
       {
-        title: 'Mini-curso IV - Micro y nanomagnetismo (sesión B)',            // Título del evento
+        title: 'Coffee break',            // Título del evento
         start: '2023-11-17T10:30:00', // Hora de inicio del evento
-        end: '2023-11-17T11:30:00',   // Hora de finalización del evento
+        end: '2023-11-17T10:50:00' ,  // Hora de finalización del evento
+        backgroundColor: '#acacac'
+      },
+      {
+        title: 'Johans Restrepo',            // Título del evento
+        start: '2023-11-17T10:50:00', // Hora de inicio del evento
+        end: '2023-11-17T11:50:00',   // Hora de finalización del evento
         backgroundColor: '#454D04'
       },
       {
-        title: 'Mesa redonda - Perspectivas en investigacion y desarrollo tecnológico basado en magnetismo en Colombia.',            // Título del evento
-        start: '2023-11-17T11:30:00', // Hora de inicio del evento
+        title: 'Rafael Gonzalez',            // Título del evento
+        start: '2023-11-17T11:50:00', // Hora de inicio del evento
         end: '2023-11-17T12:30:00',   // Hora de finalización del evento
-        backgroundColor: '#082A4D'
+        backgroundColor: '#FF8880'
       },
       {
-        title: 'Almuerzo de clausura',            // Título del evento
+        title: 'Libre',            // Título del evento
         start: '2023-11-17T12:30:00', // Hora de inicio del evento
         end: '2023-11-17T14:00:00',   // Hora de finalización del evento
-        backgroundColor: '#089995'
+        backgroundColor: '#000000'
+      },
+      {
+        title: 'Jairo Prias',            // Título del evento
+        start: '2023-11-17T14:00:00', // Hora de inicio del evento
+        end: '2023-11-17T14:30:00',   // Hora de finalización del evento
+        backgroundColor: '#8B990F'
+      },
+      {
+        title: 'Daniel Salazar',            // Título del evento
+        start: '2023-11-17T14:30:00', // Hora de inicio del evento
+        end: '2023-11-17T15:00:00',   // Hora de finalización del evento
+        backgroundColor: '#FF8880'
+      },
+      {
+        title: 'Fabio Saccone',            // Título del evento
+        start: '2023-11-17T15:00:00', // Hora de inicio del evento
+        end: '2023-11-17T15:50:00',   // Hora de finalización del evento
+        backgroundColor: '#8B990F'
+      },
+      {
+        title: 'Coffe break',            // Título del evento
+        start: '2023-11-17T15:50:00', // Hora de inicio del evento
+        end: '2023-11-17T16:20:00',   // Hora de finalización del evento
+        backgroundColor: '#acacac'
+      },
+      {
+        title: 'Roberto Zysler',            // Título del evento
+        start: '2023-11-17T16:20:00', // Hora de inicio del evento
+        end: '2023-11-17T17:20:00',   // Hora de finalización del evento
+        backgroundColor: '#454D04'
+      },
+      {
+        title: 'Cierre',            // Título del evento
+        start: '2023-11-17T17:20:00', // Hora de inicio del evento
+        end: '2023-11-17T18:30:00',   // Hora de finalización del evento
+        backgroundColor: '#082A4D'
       },
     ]
       });
